@@ -155,3 +155,34 @@ h6 {
         "dash-header dash-header dash-buttons"
         "dash-header dash-header dash-buttons";
 }
+
+
+/* main grid and subgrids */
+
+.projects {
+    grid-area: projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: "projects projects projects projects announcements"
+        "projects projects projects projects announcements"
+        "projects projects projects projects announcements"
+        "projects projects projects projects trending"
+        "projects projects projects projects trending"
+        "projects projects projects projects trending";
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
