@@ -16,6 +16,7 @@ body {
     line-height: 1.5;
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
+    font-family: "Roboto", sans-serif;
 }
 
 /* 5. Improve media defaults */
@@ -126,4 +127,31 @@ h6 {
 .sidebar-link {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* header grid */
+
+.search-bar {
+    grid-area: search-bar;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.dash-header {
+    grid-area: dash-header;
+}
+
+.dash-buttons {
+    grid-area: dash-buttons;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: "search-bar search-bar profile"
+        "dash-header dash-header dash-buttons"
+        "dash-header dash-header dash-buttons";
 }
