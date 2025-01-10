@@ -100,7 +100,7 @@ h6 {
 }
 
 .main {
-    background-color: gray;
+    background-color: lightgrey;
     grid-area: main;
 }
 
@@ -149,6 +149,11 @@ h6 {
     grid-area: dash-buttons;
 }
 
+.dash-buttons>button {
+    background-color: #1134A6;
+    color: white;
+}
+
 .header {
     display: grid;
     grid-template-areas: "search-bar search-bar profile"
@@ -179,10 +184,79 @@ h6 {
         "projects projects projects projects trending"
         "projects projects projects projects trending"
         "projects projects projects projects trending";
+    gap: 1rem;
+}
+
+.announcements,
+.trending {
+    height: 100%;
 }
 
 .projects-grid {
     display: grid;
+    height: 90%;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+}
+
+.project {
+    background-color: white;
+    border-left: 5px solid orangered;
+    border-radius: 7px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.project>h3,
+.project>p {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.project>p {
+    width: 75%;
+}
+
+.announcements-grid,
+.trending-grid {
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    height: 80%;
+}
+
+.announcements-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.announcement>p {
+    font-size: 0.75rem;
+}
+
+.announcement,
+.user {
+    padding: 0.5rem;
+}
+
+.announcement {
+    border-top: 1px solid lightgrey;
+}
+
+/* this should really be a class for the h3s */
+.projects>h3,
+.announcements>h3,
+.trending>h3 {
+    margin-top: 1rem;
+}
+
+.projects>h3 {
+    margin-left: 1rem;
 }
