@@ -122,7 +122,8 @@ h6 {
 
 .sidebar-header {
     color: white;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 .sidebar-link {
@@ -162,6 +163,8 @@ svg {
 .dash-buttons>button {
     background-color: #1134A6;
     color: white;
+    border: none;
+    border-radius: 7px;
 }
 
 .header {
@@ -171,6 +174,19 @@ svg {
         "dash-header dash-header dash-buttons";
 }
 
+.search-bar>input {
+    width: 75%;
+    border-radius: 12px;
+    border: none;
+    background-color: lightgray;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.search-bar>svg {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
 
 /* main grid and subgrids */
 
@@ -254,10 +270,29 @@ svg {
 .announcement,
 .user {
     padding: 0.5rem;
+    display: flex;
+}
+
+.announcement {
+    flex-direction: column;
+
+}
+
+.user {
+    flex-direction: row;
+    align-items: center;
 }
 
 .announcement {
     border-top: 1px solid lightgrey;
+}
+
+.announcement:first {
+    border: none;
+}
+
+#trending-heading {
+    margin-top: 0;
 }
 
 /* this should really be a class for the h3s */
@@ -268,5 +303,24 @@ svg {
 }
 
 .projects>h3 {
+    margin-left: 1rem;
+}
+
+/* image styles */
+
+.profile-pic {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1rem;
+}
+
+.profile-pic-lg {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1rem;
     margin-left: 1rem;
 }
