@@ -122,6 +122,7 @@ h6 {
 
 .sidebar-header {
     color: white;
+    margin-left: 0.5rem;
 }
 
 .sidebar-link {
@@ -129,6 +130,15 @@ h6 {
     color: white;
     font-size: 1rem;
     font-weight: 500;
+    margin-left: 0.75rem;
+}
+
+.sidebar-grid-item {
+    margin-top: auto;
+}
+
+svg {
+    margin-left: 1rem;
 }
 
 /* header grid */
